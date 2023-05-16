@@ -43,3 +43,26 @@ setInterval(() => {
   imgs[cimg + k].style.marginLeft = -dir * 100 * kn + "%";
   sels[cimg].classList.toggle("on");
 }, 2000);
+
+const toolbar = document.querySelector(".toolbar");
+const headerImg = document.querySelector(".header-img");
+const hero = document.querySelector(".hero");
+let oldoffset = toolbar.offsetTop;
+
+window.onscroll = () =>{
+  if(toolbar.offsetTop < document.documentElement.scrollTop && !toolbar.classList.contains("on")){
+    toolbar.classList.add("on");
+    headerImg.style.paddingTop = "50px";
+    
+  }
+  
+  if(oldoffset > document.documentElement.scrollTop && toolbar.classList.contains("on")){
+    toolbar.classList.remove("on");
+    
+    headerImg.style.paddingTop = "0";
+  }
+}
+
+function expand(btn){
+  console.log("Hi");
+}
