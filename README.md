@@ -3,6 +3,13 @@ This is the main reposetory for the theme for https://ghssvazhakkadonline.blogsp
 
 ## Latest Update
 
+### 17 May 2023
+
+* Added popular links
+* Added icon and name in the toolbar appear on scrolling
+
+### Pre-Alpha 1
+
 * Added the transparent and blur toolbar.
 * Fixed position on different browsers.
 * Added an example view for posts with a read more button.

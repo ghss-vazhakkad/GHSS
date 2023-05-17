@@ -3,7 +3,7 @@ function togglenav(nav) {
   document.querySelector(".page-list").classList.toggle("open");
 }
 
-let page = document.querySelector(".page-selector>span");
+let page = document.querySelector(".page-selector>span.page-name");
 let targets = document.querySelectorAll(".page-list a");
 for (let t = 0; t < targets.length; t++) {
   let target = targets[t];
@@ -64,5 +64,24 @@ window.onscroll = () =>{
 }
 
 function expand(btn){
-  console.log("Hi");
+  const el = btn.parentNode;
+  const a = el.childNodes[3];
+  window.location = a;
 }
+
+const news = document.querySelector(".news-updates>.news");
+
+let delta = 0.5;
+setInterval(()=>{
+  news.scrollTop += delta;
+  if(news.scrollTop >= news.scrollHeight-news.clientHeight){
+    delta = -delta;
+  }
+},1000/30);
+
+news.addEventListener("touchstart",()=>{
+  delta = 0;
+})
+
+news.addEventListener("touchend",()=> delta=0.5);
+
