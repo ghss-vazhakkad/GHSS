@@ -3,6 +3,12 @@ This is the main reposetory for the theme for https://ghssvazhakkadonline.blogsp
 
 ## Latest Update
 
+### 19 May 2023
+
+* Resized images for stability
+* Attached the site to blogger
+* Fixed font family error
+
 ### 17 May 2023
 
 * Added popular links
