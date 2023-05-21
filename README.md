@@ -3,6 +3,10 @@ This is the main reposetory for the theme for https://ghssvazhakkadonline.blogsp
 
 ## Latest Update
 
+### 21 May 2023
+
+* Added simple elemental desktop support
+
 ### 19 May 2023
 
 * Resized images for stability
