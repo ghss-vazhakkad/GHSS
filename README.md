@@ -3,6 +3,18 @@ This is the main reposetory for the theme for https://ghssvazhakkadonline.blogsp
 
 ## Latest Update
 
+### 26 May 2023
+
+* Fixed desktop-view
+
+### 23 May 2023
+
+* Renamed paragraph element to division with classname 'body'.
+
+### 22 May 2023
+
+* Added gradient header
+
 ### 21 May 2023
 
 * Added simple elemental desktop support
@@ -18,7 +30,7 @@ This is the main reposetory for the theme for https://ghssvazhakkadonline.blogsp
 * Added popular links
 * Added icon and name in the toolbar appear on scrolling
 
-### Pre-Alpha 1
+### 16 May 2023
 
 * Added the transparent and blur toolbar.
 * Fixed position on different browsers.

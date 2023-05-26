@@ -5,12 +5,22 @@
 }
 
 header{
-  background: deepskyblue;
+  background: linear-gradient(
+        45deg,
+        #2af,
+        #7af,
+        #aaf
+      );;
   padding-top: 8px;
 }
 
 body{
-  background: #56a;
+  background: linear-gradient(
+        -45deg,
+        deepskyblue,
+        violet,
+        blue
+      );
 }
 .hero{  
     display: flex;
@@ -45,7 +55,7 @@ body{
     transition-duration: 500ms;
     text-transform: uppercase;
     font-weight: bolder;
-    padding-left: 20px;
+    padding-left:20px;
     align-items: center;
     display: flex;
 }
@@ -169,7 +179,6 @@ body{
     transition-duration: 200ms;
     z-index:100;
     position: absolute;
-    box-shadow: 0px 5px 5px #0005;
     width:100%;
     overflow: hidden;
   }
@@ -264,7 +273,7 @@ body{
   }
   
   .follow-us{
-    margin:10px;
+    margin:15px;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -367,10 +376,21 @@ body{
   .post>.info .user{
     margin-right: auto;
   }
+  /* 
   .post>p{
     font-size: 15px;
     max-height: 70px;
     overflow: hidden;
+  } */
+  
+  .post>.body{
+    font-size: 15px;
+    max-height: 200px;
+    overflow: hidden;
+  }
+  
+  .post>.body.open{
+    max-height: initial;
   }
   
   
@@ -383,6 +403,10 @@ body{
       #fff
     );
     margin-top:-70px;
+  }
+  
+  .post>.fader.open{
+    display: none;
   }
   
   
@@ -611,10 +635,26 @@ body{
       box-shadow: none;
       z-index: 160;
     }
+    
+    .page-selector{
+      backdrop-filter: none;
+      margin-left: auto;
+    }
   
     .toolbar.on{
       width: 600px;
       margin-left: auto;
       margin-right: auto;
     }  
+    
+    .toolbar .page-name {
+      transition-duration: 500ms;
+      position: absolute;
+      left: auto;
+      opacity: 1;
+    }
+    
+    .toolbar span.titles{
+      left:auto;
+    }
   }

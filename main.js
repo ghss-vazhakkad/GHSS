@@ -46,27 +46,28 @@ setInterval(() => {
 
 const toolbar = document.querySelector(".toolbar");
 const headerImg = document.querySelector(".header-img");
+const header = document.querySelector("header");
 const hero = document.querySelector(".hero");
 let oldoffset = toolbar.offsetTop;
 
 window.onscroll = () =>{
   if(toolbar.offsetTop < document.documentElement.scrollTop && !toolbar.classList.contains("on")){
     toolbar.classList.add("on");
-    headerImg.style.paddingTop = "50px";
+    header.style.paddingBottom = "50px";
     
   }
   
   if(oldoffset > document.documentElement.scrollTop && toolbar.classList.contains("on")){
     toolbar.classList.remove("on");
     
-    headerImg.style.paddingTop = "0";
+    header.style.paddingBottom = "0";
   }
 }
 
 function expand(btn){
   const el = btn.parentNode;
-  const a = el.childNodes[3];
-  window.location = a;
+  const url = el.getElementsByTagName("a")[0].textContent;
+  window.location = url;
 }
 
 const news = document.querySelector(".news-updates>.news");
