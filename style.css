@@ -354,7 +354,7 @@ body{
   
   .post>h1{
     font-size: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: flex;
   }
   
@@ -594,6 +594,43 @@ body{
     border-bottom: none;
   }
   
+  .fac-card{
+    padding:0px;
+    background: #000;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  
+  
+  .fac-card h1{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 70px;
+    margin-left: 10px;
+  }
+  
+  .fac-card img{
+    z-index: 0;
+    max-width:100%;
+  }
+  
+  .fac-card .fader{
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    width: 320px;
+    height: 100px;
+    margin-top: -100px;
+    border-radius: 5px;
+    
+    background: linear-gradient(0deg,#000,#0000);
+  }
+  
+  
   
   @media only screen and (min-width:400px){
     .view{
@@ -658,3 +695,5 @@ body{
       left:auto;
     }
   }
+  
+  

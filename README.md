@@ -3,6 +3,11 @@ This is the main reposetory for the theme for https://ghssvazhakkadonline.blogsp
 
 ## Latest Update
 
+### 29 May 2023
+
+* Added facilities card-view.
+* Fixed some spelling mistakes.
+
 ### 26 May 2023
 
 * Fixed desktop-view
